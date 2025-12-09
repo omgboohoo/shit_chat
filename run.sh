@@ -53,8 +53,8 @@ source "$VENV_PATH/bin/activate"
 
 # Install requirements (excluding llama-cpp-python for now)
 echo -e "${YELLOW}Installing requirements...${NC}"
-pip install --upgrade pip
-pip install colorama requests tqdm
+python3 -m pip install --upgrade pip
+python3 -m pip install colorama requests tqdm
 
 if [ $? -ne 0 ]; then
     echo -e "${RED}Failed to install requirements. Please check your internet connection and try again.${NC}"
@@ -67,13 +67,13 @@ if ls "$SCRIPT_DIR/llama.cpp/llama_cpp_python-"*"linux_x86_64.whl" 1> /dev/null 
     LINUX_WHEEL=$(ls "$SCRIPT_DIR/llama.cpp/llama_cpp_python-"*"linux_x86_64.whl" | head -1)
     
     # Install the wheel directly from llama.cpp folder
-    pip install "$LINUX_WHEEL" --force-reinstall
+    python3 -m pip install "$LINUX_WHEEL" --force-reinstall
 else
     # Check if wheel exists in main directory
     if ls "$SCRIPT_DIR/llama_cpp_python-"*"linux_x86_64.whl" 1> /dev/null 2>&1; then
         echo -e "${GREEN}Found Linux CUDA wheel in main directory, installing...${NC}"
         MAIN_WHEEL=$(ls "$SCRIPT_DIR/llama_cpp_python-"*"linux_x86_64.whl" | head -1)
-        pip install "$MAIN_WHEEL" --force-reinstall
+        python3 -m pip install "$MAIN_WHEEL" --force-reinstall
     else
         echo -e "${YELLOW}No Linux CUDA wheel found in llama.cpp folder or main directory.${NC}"
         echo -e "${YELLOW}Options:${NC}"
@@ -84,7 +84,7 @@ else
         echo
         if [[ $REPLY =~ ^[Yy]$ ]]; then
             echo -e "${YELLOW}Installing llama-cpp-python from PyPI (no CUDA)...${NC}"
-            pip install llama-cpp-python
+            python3 -m pip install llama-cpp-python
         else
             echo -e "${RED}Please build the Linux wheel first or install from PyPI.${NC}"
             exit 1
