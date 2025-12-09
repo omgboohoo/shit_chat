@@ -33,7 +33,7 @@ ShitChat is a simple, local chat application powered by `llama.cpp` that allows 
 
 ## Usage
 
-1.  Run the application using `run.sh` (Linux) or `run.bat` (Windows).
+1.  Run the application using `run.sh`.
 2.  Select a model from the displayed list.
 3.  Enter your name.
 4.  You can now start chatting with the AI. To load a character, simply drag and drop a `.png` character card file onto the console - it will automatically submit to the AI and start the conversation.
