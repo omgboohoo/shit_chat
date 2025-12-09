@@ -1,6 +1,6 @@
 # ShitChat v0.1.0
 
-ShitChat is a simple, local chat application powered by `llama.cpp` that allows users to interact with AI characters. Features out-of-the-box NVIDIA CUDA acceleration for optimal performance on compatible GPUs.
+ShitChat is a simple, local chat application tailored for Linux, powered by `llama.cpp` that allows users to interact with AI characters. Features out-of-the-box NVIDIA CUDA acceleration for optimal performance on compatible GPUs.
 
 ## Features
 
