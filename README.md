@@ -1,9 +1,10 @@
 # ShitChat v0.1.0
 
-ShitChat is a simple, local chat application powered by `llama.cpp` that allows users to interact with AI characters.
+ShitChat is a simple, local chat application powered by `llama.cpp` that allows users to interact with AI characters. Features out-of-the-box NVIDIA CUDA acceleration for optimal performance on compatible GPUs.
 
 ## Features
 
+*   **NVIDIA CUDA Acceleration:** Out-of-the-box GPU acceleration for NVIDIA graphics cards, automatically compiled and configured during setup.
 *   **Automatic Model Download:** If no models are found in the `models` folder, the application will automatically download a default model to get you started.
 *   **Multiple Model Support:** Choose from any `.gguf` model placed in the `models` folder.
 *   **Character Card Integration:** Load custom characters by dragging and dropping SillyTavern `.png` character cards into the console.
