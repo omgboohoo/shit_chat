@@ -1,0 +1,22 @@
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# Local Models (large files)
+models/
+
+# Build artifacts
+llama_cpp_build/
+dist/
+build/
+*.egg-info/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Explicitly KEEP wheels (for our custom llama.cpp build)
+!*.whl
