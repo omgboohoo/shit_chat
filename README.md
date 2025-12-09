@@ -17,8 +17,8 @@ ShitChat is a simple, local chat application powered by `llama.cpp` that allows 
 ### Linux
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
-    cd ShitChat
+    git clone https://github.com/omgboohoo/shit_chat.git
+    cd shit_chat
     ```
 2.  **Run the launcher:**
     ```bash
